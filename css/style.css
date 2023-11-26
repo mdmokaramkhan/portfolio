@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Black+Ops+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: #161513;
+    color: #F0F2F5;
+}
+
+section {
+    margin: 0 5%;
+}
+
+/* Gradient */
+
+.txt-gradient {
+    background: #B16CEA;
+    background: linear-gradient(to right, #B16CEA 0%, #FF5E69 49%, #FF8A56 80%, #FFA84B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Banner */
+
+.bg-gradient {
+    background: #B16CEA;
+    background: linear-gradient(to right, #B16CEA 0%, #FF5E69 49%, #FF8A56 80%, #FFA84B 100%);
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.banner {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    z-index: -1;
+    height: 64px;
+}
+
+.banner2 {
+    width: max(99.9vw, 1vw);
+    height: 60px;
+    background-color: #F0F2F5;
+    color: black;
+    transform: rotate(-0.035rad);
+    gap: 10px;
+    text-overflow: hidden;
+    overflow: hidden;
+    gap: 25px;
+    z-index: -1;
+}
+
+div[class="banner2 row center"]>span {
+    color: #FF8A56;
+}
+
+/*  */
+
+/* NavBar */
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+    height: 68px;
+    align-items: center;
+    display: flex;
+    transition: 200ms linear;
+    border-bottom: .5px solid transparent;
+    background-color: #161513;
+    z-index: 1;
+}
+
+.nav-scrolled {
+    border-bottom: .5px solid #e8e8e8;
+}
+
+nav>ul {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+nav>ul>li {
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav>ul>li>a:current {
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Buttons */
+.filled-button {
+    padding: 0 20px;
+    background-color: #F0F2F5;
+    border: none;
+    height: max(40px, 1vw);
+    color: #161513;
+    font-size: min(5vw, 0.8em);
+    font-weight: 400;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.filled-button:hover {
+    box-shadow: 0 5px 5px #f0f2f52f;
+}
+
+
+
+.txt-light {
+    color: #F0F2F5;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.outline-button {
+    margin: 0 5px;
+    background-color: transparent;
+    height: max(40px, 1vw);
+    color: #F0F2F5;
+    font-size: min(5vw, 0.8em);
+    font-weight: 400;
+    border: 1.5px solid #F0F2F5;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.outline-button:hover {
+    background-color: rgba(211, 211, 211, 0.218);
+}
+
+/* main layout */
+.main {
+    padding: 6% 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Avatar */
+.avatar {
+    vertical-align: middle;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+/* Educations & Work Experience Section */
+
+.item {
+    padding: 25px 25px;
+    border-bottom: 1px solid #B9BBBC;
+    transition: .5s;
+    animation: ease-in-out;
+}
+
+.item:hover {
+    border-bottom: 1px solid #FF8A56;
+}
+
+.title {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.desc {
+    margin: 0;
+    margin-top: 5px;
+    color: #B9BBBC;
+    word-break: keep-all;
+}
+
+.list-item {
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.vl {
+    border-left: 1px solid #B9BBBC;
+    height: 100px;
+}
+
+/* What i do */
+.box-img {
+    background-color: #1C1C22;
+    padding: 25px 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    animation: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: 0.3s;
+}
+
+.box-img:hover {
+    border-radius: 25px;
+}
+
+div[class='box-img']>img {
+    width: 100px;
+}
+
+div>p {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.gap-item {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #161513;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5% 0 0 0;
+    padding: 0 5% 20px 5%;
+    border-top: 1px solid #B9BBBC;
+}
+
+ul>li {
+    margin-left: 10px;
+    padding-right: 20px;
+    list-style-type: circle;
+}
+
+ul>li>a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Form Style */
+
+form {
+    margin-left: 40px;
+}
+
+form>label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+form>input {
+    width: 40vw;
+    background-color: #1C1C22;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #F0F2F5;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form>textarea {
+    background-color: #1C1C22;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+/* Project Card */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .2fr repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+.card {
+    background-color: #1C1C22;
+    padding: 10px 10px 20px 10px;
+    max-width: max(40vw, 1vw);
+    max-height: max(520px, 1vh);
+    border-radius: 5px;
+}
+
+.card>img {
+    width: max(40vw, 1vw);
+    height: max(320px, 1vh);
+    border-radius: 5px;
+}
+
+/* According */
+
+.accordion-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+}
+
+.accordion-header {
+    color: #F0F2F5;
+    background-color: transparent;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #B16CEA;
+    background: linear-gradient(to right, #B16CEA 0%, #FF5E69 49%, #FF8A56 80%, #FFA84B 100%);
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+
+.accordion-content {
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    border-bottom: .5px solid #B9BBBC;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+
+/* Device Utils To Make Website Responsive */
+@media screen and (max-width: 580px) {
+    /* TODO Design For Mobile And Tablet */
+}

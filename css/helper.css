@@ -1,0 +1,102 @@
+/* Layout Setup */
+
+/* Offset Manager To Manage Offset while scroling */
+[id]::before { 
+    content: '';
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+
+.flex {
+    display: flex;
+    word-break: keep-all;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.space-evenly {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.mt-5 {
+    margin-top: 5;
+}
+
+.mt-10 {
+    margin-top: 10;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-large {
+    margin-top: 80px;
+}
+
+/* Typography */
+
+h1 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h5 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h6 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.link {
+    border-bottom: 1px solid #FF5E69;
+}
