@@ -232,7 +232,7 @@ div>p {
 .gap-item {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
 }
 
 /* Footer */
